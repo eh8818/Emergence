@@ -1,0 +1,22 @@
+from clinpgx import get_drug_info
+import json
+
+drug = "warfarin"
+
+data = get_drug_info(drug)
+
+print("=" * 80)
+print("CLINPGX WARFARIN RESPONSE")
+print("=" * 80)
+
+print("\nTop-level type:")
+print(type(data))
+
+if isinstance(data, dict):
+
+    print("\nTop-level keys:")
+    for key in data.keys():
+        print(" -", key)
+
+print("\nFull response:")
+print(json.dumps(data, indent=2)[:20000])

@@ -1,0 +1,4 @@
+chr22:42128248
+	Discarded genotype at this position because REF in VCF (C) does not match expected reference (CAGTT)
+chr22:42128325
+	Duplicate entry found in VCF; first valid entry trumps others.
